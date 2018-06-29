@@ -2,14 +2,15 @@
 #include <iostream>
 using namespace std;
 int main(){
-Sequence test=new Sequence("dna");
+Sequence test("dna");
 int length=test.length();
 int numberOfA=test.numberOf('A');
-string longestC=test.longestConsecutive();
-string longestR=test.longestRepeated();
 cout<<"length is: "<<length<<endl;
-cout<<"number of 'A' is: "<<numberOfA<<endl;
-cout<<"longest consecutive is: "<<longestC<<endl;
-cout<<"longesr repeated is: "<<longestR<<endl;
+cout<<"A: "<<numberOfA<<endl;
+cout<<"T: "<<test.numberOf('T')<<endl;
+cout<<"C: "<<test.numberOf('C')<<endl;
+cout<<"G: "<<test.numberOf('G')<<endl;
+cout<<test.longestConsecutive()<<endl;
+cout<<test.longestRepeated()<<endl;
 return 0;
 }
